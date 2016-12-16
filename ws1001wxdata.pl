@@ -54,7 +54,6 @@ my $tcptimeout 	= 20;	# waiting for client connection timeout
 my $maxtry	= 3;	# max attemps to write EW output file
 my $trycnt 	= 0;
 my $maxalrm 	= 5;	# max number of connection timeouts
-my $alrmcnt 	= 0;
 my $maxreset 	= 10;	# max number of consecutive connection resets
 my $resetcnt	= 0;
 my $ltwd 	= 0;
@@ -87,6 +86,7 @@ print "broadcast address = $bcaddr\n";
 
 RESET:
 my $sndcnt = 0;
+my $alrmcnt = 0;
 
 # auto-flush on socket
 $| = 1;
