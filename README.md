@@ -28,3 +28,8 @@ Software:
 ActivePerl (Perl version 5.20.1)
 EasyWeather Version 2.3.3
 Cumulus release v1.9.4 (build 1099)
+
+Version 1.19:
+  Use -m option if console displays wx data in metric units.
+  Use -p option to get Pi host address.
+  Use -a option to specify and check for wx alarms.
